@@ -35,11 +35,11 @@ const Header = () => {
               <Link to="/catalog/baking" className="dropdown-item" onClick={() => setMenuOpen(false)}>Выпечка</Link>
             </div>
           </div>
-          <Link to="/payment" onClick={() => setMenuOpen(false)}>Оплата</Link>
-          <Link to="/blog" onClick={() => setMenuOpen(false)}>Блог</Link>
-          <Link to="/sales" onClick={() => setMenuOpen(false)}>Акции</Link>
-          <Link to="/reviews" onClick={() => setMenuOpen(false)}>Отзывы</Link>
-          <Link to="/contact" onClick={() => setMenuOpen(false)}>Контакты</Link>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Оплата</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Блог</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Акции</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Отзывы</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Контакты</a>
         </nav>
       </div>
     </header>
