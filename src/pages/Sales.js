@@ -1,11 +1,14 @@
 import React from 'react';
 
-const Blog = () => {
+const Sales = () => {
   return (
     <section className="page">
       <div className="container">
-        <h1>Блог</h1>
-        <p>Читайте полезные статьи о наших тортах, выпечке и новостях компании!</p>
+        <h1>Акции</h1>
+        <p>Следите за нашими выгодными предложениями и скидками!</p>
       </div>
     </section>
   );
+};
+
+export default Sales;
