@@ -2,32 +2,44 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
 
   return (
     <header className="header">
       <div className="container header-inner">
-        <Link to="/" className="logo">Сладкий Чек</Link>
-        <nav className="nav">
-          <div 
-            className="nav-item dropdown"
-            onMouseEnter={() => setShowDropdown(true)}
-            onMouseLeave={() => setShowDropdown(false)}
-          >
-            <span className="nav-link">Каталог</span>
-            {showDropdown && (
-              <div className="dropdown-menu">
-                <Link to="/catalog/cakes" className="dropdown-item">Торты</Link>
-                <Link to="/catalog/pastries" className="dropdown-item">Пирожные</Link>
-                <Link to="/catalog/baking" className="dropdown-item">Выпечка</Link>
-              </div>
-            )}
+        <div className="logo">
+          <Link to="/">Sweet Treats</Link>
+        </div>
+
+        <div className="burger" onClick={toggleMenu}>
+          <span className={menuOpen ? 'open' : ''}></span>
+          <span className={menuOpen ? 'open' : ''}></span>
+          <span className={menuOpen ? 'open' : ''}></span>
+        </div>
+
+        <nav className={`nav ${menuOpen ? 'active' : ''}`}>
+          <div className="dropdown" onClick={toggleDropdown}>
+            <span>Каталог</span>
+            <div className={`dropdown-menu ${dropdownOpen ? 'active' : ''}`}>
+              <Link to="/catalog/cakes" className="dropdown-item" onClick={() => setMenuOpen(false)}>Торты</Link>
+              <Link to="/catalog/pastries" className="dropdown-item" onClick={() => setMenuOpen(false)}>Пирожные</Link>
+              <Link to="/catalog/baking" className="dropdown-item" onClick={() => setMenuOpen(false)}>Выпечка</Link>
+            </div>
           </div>
-          <Link to="/payment" className="nav-link">Оплата</Link>
-          <Link to="/blog" className="nav-link">Блог</Link>
-          <Link to="/sales" className="nav-link">Акции</Link>
-          <Link to="/reviews" className="nav-link">Отзывы</Link>
-          <Link to="/contact" className="nav-link">Контакты</Link>
+          <Link to="/payment" onClick={() => setMenuOpen(false)}>Оплата</Link>
+          <Link to="/blog" onClick={() => setMenuOpen(false)}>Блог</Link>
+          <Link to="/sales" onClick={() => setMenuOpen(false)}>Акции</Link>
+          <Link to="/reviews" onClick={() => setMenuOpen(false)}>Отзывы</Link>
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>Контакты</Link>
         </nav>
       </div>
     </header>
