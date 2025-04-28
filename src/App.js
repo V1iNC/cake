@@ -9,6 +9,13 @@ import Blog from './pages/Blog';
 import Sales from './pages/Sales';
 import Reviews from './pages/Reviews';
 import ScrollToTop from './components/ScrollToTop';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+useEffect(() => {
+  AOS.init({ duration: 1000, once: true });
+}, []);
 
 function App() {
   return (
