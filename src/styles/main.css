@@ -213,3 +213,17 @@ a {
 .dropdown-item:hover {
   background: #fff0e8;
 }
+.page {
+  padding: 50px 0;
+}
+
+.page h1 {
+  font-size: 32px;
+  color: #4a2f27;
+  margin-bottom: 20px;
+}
+
+.page p {
+  font-size: 18px;
+  color: #5a4035;
+}
