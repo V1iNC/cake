@@ -237,3 +237,37 @@ a {
   font-size: 18px;
   color: #5a4035;
 }
+.notfound {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.notfound h1 {
+  font-size: 120px;
+  color: #e0d6d1;
+  margin-bottom: 20px;
+}
+
+.notfound h2 {
+  font-size: 32px;
+  color: #4a2f27;
+  margin-bottom: 10px;
+}
+
+.notfound p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.notfound .btn {
+  background: #4a2f27;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.notfound .btn:hover {
+  background: #613a2f;
+}
