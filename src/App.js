@@ -27,6 +27,7 @@ function App() {
           <Route path="/sales" element={<Sales />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
