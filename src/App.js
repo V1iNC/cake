@@ -8,6 +8,7 @@ import Payment from './pages/Payment';
 import Blog from './pages/Blog';
 import Sales from './pages/Sales';
 import Reviews from './pages/Reviews';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
