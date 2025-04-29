@@ -35,10 +35,10 @@ const Header = () => {
               <Link to="/catalog/baking" className="dropdown-item" onClick={() => setMenuOpen(false)}>Выпечка</Link>
             </div>
           </div>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>Оплата</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>Блог</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>Акции</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>Отзывы</a>
+          <a href="#payment" onClick={() => setMenuOpen(false)}>Оплата</a>
+          <a href="#blog" onClick={() => setMenuOpen(false)}>Блог</a>
+          <a href="#sales" onClick={() => setMenuOpen(false)}>Акции</a>
+          <a href="#reviews" onClick={() => setMenuOpen(false)}>Отзывы</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Контакты</a>
         </nav>
       </div>
