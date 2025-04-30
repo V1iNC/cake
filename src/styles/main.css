@@ -431,3 +431,36 @@ a {
   border-radius: 4px;
   cursor: pointer;
 }
+.product-card, .cart-item {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.product-card img, .cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  text-align: right;
+}
+
+.checkout-button {
+  padding: 10px 20px;
+  background-color: #4a2f27;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
