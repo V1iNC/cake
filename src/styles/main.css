@@ -414,3 +414,20 @@ a {
     display: flex;
   }
 }
+.cart-summary, .user-info, .order-history, .settings {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.checkout-button, .logout-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #4a2f27;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
