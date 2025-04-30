@@ -12,6 +12,8 @@ import ScrollToTop from './components/ScrollToTop';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Cart from './pages/Cart';
+import Profile from './pages/Profile';
 
 useEffect(() => {
   AOS.init({ duration: 1000, once: true });
