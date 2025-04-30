@@ -40,6 +40,8 @@ const Header = () => {
           <a href="#sales" onClick={() => setMenuOpen(false)}>Акции</a>
           <a href="#reviews" onClick={() => setMenuOpen(false)}>Отзывы</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Контакты</a>
+          <Link to="/cart" onClick={() => setMenuOpen(false)}>Корзина</Link>
+          <Link to="/profile" onClick={() => setMenuOpen(false)}>Кабинет</Link>
         </nav>
       </div>
     </header>
