@@ -1,13 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 
-const ProductCard = ({ product }) => (
-  <div className="product-card">
-    <img src={product.image} alt={product.title} className="product-image" />
-    <h3>{product.title}</h3>
-    <p>{product.price} ₽</p>
-    <Link to={/product/${product.id}} className="btn">Подробнее</Link>
-  </div>
-);
+const ProductCard = ({ product }) => {
+  const { addToCart } = useCart();
+
+  return (
+    <div className="product-card">
+      <img src={product.image} alt={product.title} />
+      <h3>{product.title}</h3>
+      <p>{product.price} ₽</p>
+      <button onClick={() => addToCart(product)}>В корзину</button>
+    </div>
+  );
+};
 
 export default ProductCard;
